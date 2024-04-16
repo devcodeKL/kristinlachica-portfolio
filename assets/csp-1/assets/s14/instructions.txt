@@ -1,0 +1,21 @@
+s14 ACTIVITY INTSTRUCTIONS
+
+Figma Prototype: https://www.figma.com/community/file/1207522067688116012
+
+1. Create a copy of the Figma Prototype from Figma community.
+
+2. Translate the prototype to HTML code with the use of Bootstrap for layouting and . CSS styles copied from Figma.
+
+- Use Templated bootstrap components and !important to override bootstrap styles.
+
+- Use ids and classes to easily target elements.
+
+- Style the elements first before layout
+
+- Select the selectors of the carousel using its class or add your own class.
+
+3. Create a git repository named s14.
+
+4. Initialize a local git repository, add the remote link and push to git with the commit message of Add activity code s14.
+
+https://www.figma.com/community/file/1207522067688116012/sample-mockup-portfolio

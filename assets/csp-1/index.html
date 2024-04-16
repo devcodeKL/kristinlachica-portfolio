@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristin Lachica | Portfolio</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- box icons link -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <div class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#tool">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, I'm</h3>
+            <h1>Kristin</h1>
+            <h4>Web Developer</h4>
+            <a href="#" class="btn">My Works</a>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5>I am a Full Stack <span>Web Developer</span></h5>
+            <p>Shifting gears into the tech world, blending my past endeavors with a newfound passion for coding to craft innovative digital solutions.</p>
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section class="project" id="project">
+        <div class="text-center">
+            <h2>My Projects</h2>
+            <h4>Discover My Latest Works</h4>
+        </div>
+
+        <div class="project-item">
+            <div class="project-box">
+                <img src="images/s11-flex.png">
+                <h3>CSS and Bootstrap Flex</h3>
+                <p>Utilizing the d-flex class to manipulate the display and alignment of elements to create flexible layouts.</p>
+                <a class="button" href="assets/s11/index.html">Link To Project</a>
+            </div>
+
+            <div class="project-box">
+                <img src="images/s12-bootstrap.png">
+                <h3>Bootstrap - Layout & Best Practice</h3>
+                <p>Leveraging Bootstrap to build visually appealing and functional websites.</p>
+                <a class="button" href="assets/s12/index.html">Link To Project</a>
+            </div>
+
+            <div class="project-box">
+                <img src="images/s14-figma.png">
+                <h3>Wireframes, Mockup and Prototypes</h3>
+                <p>Learning to translate Figma design mockups into fully responsive websites.</p>
+                <a class="button" href="assets/s14/index.html">Link To Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- tools section -->
+    <section class="tool" id="tool">
+        <div class="text-center">
+            <h2>Tools</h2>
+        </div>
+        <div class="list-tool">
+            <div class="in">
+                <img width="150" src="images/logo-html5.png"/>
+                <img width="150" src="images/logo-css3.png"/>
+                <img width="150" src="images/logo-javascript.png"/>
+                <img width="150" src="images/logo-bootstrap.png"/>
+                <img width="150" src="images/logo-react.png"/>
+                <img width="150" src="images/logo-mongodb.png"/> 
+                <img width="150" src="images/logo-expressjs.png"/>
+                <img width="150" src="images/logo-nodejs.png"/>
+                <img width="150" src="images/logo-mocha.png"/>
+                <img width="150" src="images/logo-chai.png"/>
+                <img width="150" src="images/logo-selenium.png"/>
+                <img width="150" src="images/logo-sublime.png"/>
+                <img width="150" src="images/logo-postman.png"/>
+                <img width="150" src="images/logo-git.png"/>
+                <img width="150" src="images/logo-gitlab.png"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact" class="container-fluid bg-dark p-5 text-white">
+    <h2 class="contact-title text-center">Contact Me</h2>
+        <div class="row d-flex justify-content-center">
+            <div class="bg-primary mt-3 text-left col-md-8 col-xl-4 p-3">
+                <form id="submit-form">
+                    <!-- Form inputs -->
+                    <div class="form-group text-center">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name"/>
+                    </div>
+                    <div class="form-group text-center">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email"/>
+                    </div>
+                    <div class="form-group text-center">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <!-- Send button -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-dark bg-dark" data-toggle="modal" data-target="#modalDiv">Send Email</button>
+                    </div>
+                </form>
+                <!-- Modal for confirmation -->
+                <div class="modal" tabindex="-1" id="modalDiv">
+                    <!-- Modal dialog -->
+                    <div class="modal-dialog">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark">Thank you for reaching out!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-dark text-center">Message sent successfully </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end section -->
+    <section class="footer">
+            <h3>Kristin Lachica</h3>
+            <p>"Coding is the language of possibility, where imagination meets innovation."</p>
+            <div class="end-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-google'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+    </section>
+
+    <!-- scroll btn -->
+    <a href="#" class="scroll-btn"><i class='bx bx-chevron-up'></i></a>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- JS link -->
+    <script src="script.js"></script>
+
+    <!-- JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

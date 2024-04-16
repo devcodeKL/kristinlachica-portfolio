@@ -1,0 +1,75 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Bootstrap Font*/
+body {
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.h-25 {
+	height: 25%;
+}
+
+.p-3 {
+	padding: 15px;
+}
+
+.bg-success {
+	background-color: forestgreen;
+}
+
+.bg-warning {
+	background-color: orange;
+}
+
+.bg-danger {
+	background-color: darkred;
+}
+
+.bg-secondary {
+	background-color: gray;
+}
+
+/* CSS and Bootstrap Flexbox */
+.d-flex {
+	/*
+		- The "flex" value of the "display" property will change the element into a block-level flex container.
+		- This will make all the child elements become "flexible" that allows them to occupy space enough for the content of an element and at the same time will have the elements appear beside each other.
+	*/
+	display: flex;
+}
+
+.justify-content-center {
+	/*
+		- The CSS "justify-content" property allows us to manipulate the positioning of elements horizontally.
+	*/
+	justify-content: center;
+}
+
+.align-items-center {
+	/*
+		- The CSS "align-items" property allows us to manipulate the positioning of elements vertically.
+	*/
+	align-items: center;
+}
+
+
+/*
+	- The CSS "flex-direction" property allows us to manipulate the direction of how elements are positioned inside a flex container.
+	- The "column-reverse" value will display the elements vertically.
+*/
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}

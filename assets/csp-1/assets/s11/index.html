@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap Link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+		<!-- Custom CSS -->
+		<!-- <link rel="stylesheet" type="text/css" href="./index.css"> -->
+
+		<title>CSS and Bootstrap Flex</title>
+	</head>
+	<body>
+
+		<div class="text-center">
+			
+			<h1>Bootstrap Flex</h1>
+			<p>Use the d-flex class to create a flex contatiner an transform direct children into flex items.</p>
+
+			<h2>Centering elements</h2>
+			<!-- 
+				- The "d-flex" class will change all the child div elements into flex items.
+				- The flex items will only occupy space enough for the element's content allowing it more flexibility to manipulate our elements.
+				- The CSS "justify-content" property may only be applied if the element has a "flex" value for it's "display" property.
+				- The "justify-content-center" class will horizontally center all child elements.
+				- Using the combination of the CSS "width" property and the justify-content property helps align elements horizontally.
+			 -->
+			<div style="height: 500px;" class="bg-secondary p-3 d-flex justify-content-center align-items-center flex-column-reverse">
+				<div class="h-25 p-3 bg-success">Flex Item A</div>
+				<div class="h-25 p-3 bg-warning">Flex Item B</div>
+				<div class="h-25 p-3 bg-danger">Flex Item C</div>
+			</div>
+
+			<!-- 
+				- The "flex-row" and "flex-row-reverse" classes may only be applied if the element has a "flex" value for it's "display" property.
+				- The CSS "flex-row" and "flex-row-reverse" classes changes how the elements are displayed horizontally.
+			 -->
+
+			<h2>Flex Row</h2>
+			<div class="bg-dark p-3 d-flex flex-row">
+				<div class="p-3 bg-success">Flex Item A</div>
+				<div class="p-3 bg-warning">Flex Item B</div>
+				<div class="p-3 bg-danger">Flex Item C</div>
+			</div>
+
+			<h2>Flex Row Reverse</h2>
+			<div class="bg-dark p-3 d-flex flex-row-reverse">
+				<div class="p-3 bg-success">Flex Item A</div>
+				<div class="p-3 bg-warning">Flex Item B</div>
+				<div class="p-3 bg-danger">Flex Item C</div>
+			</div>
+
+			<h2>Creating Space Between Elements</h2>
+			<div class="bg-dark p-3 d-md-flex justify-content-around">
+				<div class="p-3 bg-success">Card A</div>
+				<div class="p-3 bg-warning">Card B</div>
+				<div class="p-3 bg-danger">Card C</div>
+			</div>
+
+			<h2>Nested Flex Elements</h2>
+			<div class="bg-dark p-3 d-block d-md-flex">
+				<div class="p-3 bg-success mr-auto">Flex Item A</div>
+				<div class="w-50 d-block d-md-flex justify-content-between">
+					<div class="p-3 bg-warning">Flex Item B</div>
+					<div class="p-3 bg-danger">Flex Item C</div>
+					<div class="p-3 bg-primary">Flex Item D</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	</body>
+</html>

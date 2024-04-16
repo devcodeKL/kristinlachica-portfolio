@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristin Lachica | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a3319bd04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- nav -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo246.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Web Developer</p>
+            <h1>Hi, I'm <span>Kristin</span>!</h1>
+        </div>
+    </div>
+</div>
+
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! After a rewarding career in the culinary arts and business management, I’ve redirected my energy and skills towards web development by training at Zuitt Coding Bootcamp.</p><br>
+                <p>My unique background equips me with an innate understanding of customer experience and operational efficiency, making me a proficient developer who can anticipate and meet user needs effectively.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Web Development</span><br>Git Basics, HTML, CSS, Bootstrap, Figma Mockups</li>
+                        <li><span>Back End Development</span><br>JavaScript, MongoDB, Node.js, Express.js, Postman, REST API</li>
+                        <li><span>Full Stack Development</span><br>MERN tech stack (MongoDB, Express.js, React.js, Node.js), DOM Manipulation, Component-Driven Development, API Integration with Fetch, SDLCs</li>
+                        <li><span>Tester Essentials</span><br>Unit Testing, TDD, Test Suites (Mocha), Assertions (Chai), Backend Testing (Chai-Http), Frontend Testing (Selenium Web Driver)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Line Cook</span><br>September 2022 – September 2023<br>Courtyard by Marriott and Residence Inn Downtown Austin, Texas, United States</li>
+                        <li><span>Culinary Restaurant Intern</span><br>April 2022 – May 2022<br>Made Nice, Rockwell Drive, Makati City</li>
+                        <li><span>General Manager / Owner</span><br>September 2017 – December 2019<br>Accuro Diagnostic Laboratory, Rosario, Pasig City</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Web Development Training</span><br>November 2023 – March 2024<br>Zuitt Coding Bootcamp</li>
+                        <li><span>Diploma Course in Culinary Arts and
+                        Kitchen Management</span><br>January 2020 – February 2022<br>International School for Culinary Arts and Hotel Management</li>
+                        <li><span>Coursework toward a Doctor of
+                        Medicine degree</span><br>June 2012 – June 2016<br>Far Eastern University - Nicanor Reyes Medical Foundation</li>
+                        <li><span>Bachelor of Science in Medical
+                        Technology</span><br>June 2007 – March 2011<br>University of Santo Tomas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- certificates -->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">Certificates</h1>
+        <div class="certificates-list">            
+            <div>
+                <img src="images/zuitt-fec.png" alt="">
+                <h2>Zuitt: Front End Course</h2>
+                <p>Git, HTML, CSS, Bootstrap 4, chatGPT</p>
+                <a href="https://share.zertify.zuitt.co/certificate/91ba56cb-f3bd-42d1-81ff-31e298c2514f/">Link to Certificate</a>
+            </div>
+            <div>
+                <img src="images/zuitt-bec.png" alt="">
+                <h2>Zuitt: Back End Course</h2>
+                <p>JavaScript, MongoDB, Node.js, Postman, Express.js, Figma, AWS</p>
+                <a href="https://share.zertify.zuitt.co/certificate/1c03025e-37fd-489d-979c-69824e603d98/">Link to Certificate</a>
+            </div>   
+            <div>
+                <img src="images/zuitt-fsc.png" alt="">
+                <h2>Zuitt: Full Stack Course</h2>
+                <p>MERN Tech Stack (MongoDB, Express.js, React.js, Node.js), SDLCs</p>
+                <a href="https://share.zertify.zuitt.co/certificate/cff8c870-2455-4c75-97b3-27c14ad9a5f7/">Link to Certificate</a>
+            </div>   
+            <div>
+                <img src="images/zuitt-dpc.png" alt="">
+                <h2>Zuitt: Web Developer Career Program</h2>
+                <p></p>
+                <a href="https://share.zertify.zuitt.co/certificate/75351fb1-ff99-45c2-b06a-717b87a1d0c6/">Link to Certificate</a>
+            </div>  
+            <div>
+                <h2>Zuitt: Tester Essentials Course</h2>
+                <p>Unit Testing, TDD, Mocha, Chai, Chai-Http, Selenium Web Driver</p>
+                <a href="#">Link to Certificate</a>
+            </div>  
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/csp1.png">
+                <div class="layer">
+                    <h3>Responsive Web Design</h3>
+                    <p>This frontend capstone project is crafted with HTML5, CSS3, JavaScript, and Bootstrap to deliver a seamless user experience across various devices and screen sizes.</p>
+                    <a href="assets/csp-1/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/csp2.png">
+                <div class="layer">
+                    <h3>E-Commerce Management System</h3>
+                    <p>This backend capstone project, developed with Node.js, Express, and MongoDB, is deployed on AWS using an EC2 instance. Postman is used for thorough testing of API endpoints and functionality.</p>
+                    <a href="http://ec2-3-23-95-145.us-east-2.compute.amazonaws.com/b5/products/active"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/csp3.png">
+                <div class="layer">
+                    <h3>E-Commerce Web App</h3>
+                    <p>This full-stack capstone project is developed using the MERN stack, combining a JavaScript backend API with a React.js frontend. Users can browse, add to cart, and checkout products, while admins manage inventory and orders. Hosted on AWS via Zuitt Git for reliable deployment and scalability.</p>
+                    <a href="http://zuitt-bootcamp-prod-337-6638-lachica.s3-website.us-east-1.amazonaws.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"> 
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kristinlachica@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+63 917 905 9686</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kristin-lachica/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:kristinlachica@gmail.com"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://github.com/devcodeKL"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume-Kristin-Lachica.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Kristin Lachica. Crafting code, one line at a time. <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+       
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMp1U6bSu15F2fBIYL6vwyvOn1F2tAyElbMzJUGXLPpJhem89yCtJWKknAC-VoMXmC/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    </body>
+</html>
